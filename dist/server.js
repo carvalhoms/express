@@ -8,4 +8,4 @@ const app = (0, express_1.default)();
 app.get("/", (request, response) => {
     response.send("Rota usuários");
 });
-app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
+app.listen(3000, () => console.log("Servidor rodando na porta 3000 com TypeScript"));

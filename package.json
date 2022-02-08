@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "server.js",
 	"scripts": {
-		"dev": "tsc --watch"
+		"dev": "tsc --watch",
+		"start": "node ./dist/server"
 	},
 	"keywords": [],
 	"author": "",
