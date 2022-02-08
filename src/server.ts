@@ -13,6 +13,15 @@ app.get("/users", (req: Request, res: Response) => {
 	res.send("Listar todos os usuários");
 });
 
+app.get("/users/:id", (req: Request, res: Response) => {
+	res.send({
+		params: req.params,
+		message: `Editando usuário com id ${req.params.id}`,
+		body: req.body,
+		method: req.method,
+	});
+});
+
 app.post("/users", (req: Request, res: Response) => {
 	res.send(req.body);
 });
