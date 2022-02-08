@@ -9,4 +9,8 @@ app.get("/", (request: Request, response: Response) => {
 	response.send("API Express com TtpeScript");
 });
 
+app.get("/users", (req: Request, res: Response) => {
+	res.send("Listar todos os usuários");
+});
+
 app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
