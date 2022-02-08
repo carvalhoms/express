@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "server.js",
 	"scripts": {
-		"dev": "tsc --watch",
+		"dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
 		"start": "node ./dist/server"
 	},
 	"keywords": [],
