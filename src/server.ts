@@ -13,4 +13,8 @@ app.get("/users", (req: Request, res: Response) => {
 	res.send("Listar todos os usuários");
 });
 
+app.post("/users", (req: Request, res: Response) => {
+	res.send(req.body);
+});
+
 app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
