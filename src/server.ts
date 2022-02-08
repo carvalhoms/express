@@ -24,4 +24,12 @@ app.put("/users/:id", (req: Request, res: Response) => {
 	});
 });
 
+app.delete("/users/:id", (req: Request, res: Response) => {
+	res.send({
+		params: req.params,
+		message: `Excluindo usuário com id ${req.params.id}`,
+		method: req.method,
+	});
+});
+
 app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
