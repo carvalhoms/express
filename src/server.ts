@@ -17,4 +17,11 @@ app.post("/users", (req: Request, res: Response) => {
 	res.send(req.body);
 });
 
+app.put("/users/:id", (req: Request, res: Response) => {
+	res.send({
+		params: req.params,
+		body: req.body,
+	});
+});
+
 app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
